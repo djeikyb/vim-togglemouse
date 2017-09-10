@@ -30,7 +30,6 @@ endfunction
 " remapped it already (or a mapping exists already for <F12>)
 if !exists("no_plugin_maps") && !exists("no_toggle_mouse_maps")
     if !hasmapto('<SID>ToggleMouse()')
-        noremap <F12> :call <SID>ToggleMouse()<CR>
-        inoremap <F12> <Esc>:call <SID>ToggleMouse()<CR>a
+        noremap <leader>m :call <SID>ToggleMouse()<CR>
     endif
 endif
